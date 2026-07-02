@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impossible Is Nothing | Premium adidas-inspired Showcase</title>
+  <!-- Meta tags for SEO -->
+  <meta name="description" content="Explore the next generation of performance and street style. Premium adidas-inspired footwear, designed for athletes and style creators.">
+  <meta name="keywords" content="running shoes, sneakers, adidas, premium sportswear, sports, athletic shoes">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-content">
+      <svg class="logo-stripes-svg" viewBox="0 0 40 28" fill="currentColor" style="width: 80px; height: 56px; margin: 0 auto 24px; display: block;">
+        <g transform="skewX(-30) translate(16, 0)">
+          <rect class="stripe-1" x="0" y="16" width="5" height="12" />
+          <rect class="stripe-2" x="9" y="8" width="5" height="20" />
+          <rect class="stripe-3" x="18" y="0" width="5" height="28" />
+        </g>
+      </svg>
+      <p class="loader-text">IMPOSSIBLE IS NOTHING</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="glass-nav" id="header">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo">
+        <svg class="logo-svg" viewBox="0 0 40 28" fill="currentColor" style="width: 40px; height: 28px;">
+          <g transform="skewX(-30) translate(16, 0)">
+            <rect x="0" y="16" width="5" height="12" />
+            <rect x="9" y="8" width="5" height="20" />
+            <rect x="18" y="0" width="5" height="28" />
+          </g>
+        </svg>
+        <span class="logo-text">adidas</span>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active" id="nav-home">Home</a>
+        <a href="#categories" class="nav-link" id="nav-categories">Categories</a>
+        <a href="#new-arrivals" class="nav-link" id="nav-arrivals">New Arrivals</a>
+        <a href="#products" class="nav-link" id="nav-products">Products</a>
+        <a href="#banner" class="nav-link" id="nav-collections">Collections</a>
+        <a href="#stats" class="nav-link" id="nav-stats">Stats</a>
+        <a href="#reviews" class="nav-link" id="nav-reviews">Reviews</a>
+      </nav>
+
+      <!-- Nav Icons & Controls -->
+      <div class="nav-controls">
+        <!-- Search bar input toggle -->
+        <div class="search-box">
+          <input type="text" placeholder="Search..." id="searchInput">
+          <button class="control-btn" id="searchBtn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+
+        <!-- Wishlist -->
+        <button class="control-btn badge-btn" id="wishlistBtn" aria-label="Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Cart -->
+        <button class="control-btn badge-btn" id="cartBtn" aria-label="Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+
+        <!-- Profile -->
+        <button class="control-btn" id="profileBtn" aria-label="Profile">
+          <i class="far fa-user"></i>
+        </button>
+
+        <!-- Dark/Light Theme Toggle -->
+        <button class="control-btn theme-toggle" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="fas fa-sun sun-icon"></i>
+          <i class="fas fa-moon moon-icon"></i>
+        </button>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-stripes">
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+        <div class="stripe"></div>
+      </div>
+      
+      <div class="hero-container">
+        <!-- Left Column: Content -->
+        <div class="hero-content">
+          <span class="tagline">NEW SEASON RUNNING</span>
+          <h1 class="hero-title">IMPOSSIBLE<br>IS NOTHING</h1>
+          <p class="hero-subtitle">
+            Push past your boundaries with the all-new Ultraboost DNA. Powered by energy-returning capsules for extreme comfort, responsive cushioning, and premium street style.
+          </p>
+          <div class="hero-ctas">
+            <a href="#products" class="btn btn-primary ripple">Shop Now</a>
+            <a href="#new-arrivals" class="btn btn-outline">Explore Collection</a>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Parallax Shoe -->
+        <div class="hero-image-wrapper" id="heroImageWrapper">
+          <div class="hero-shoe-glow"></div>
+          <!-- Custom generated premium shoe -->
+          <img src="assets/images/hero-shoe.png" alt="Futuristic Adidas Running Shoe" class="hero-shoe" id="heroShoe">
+          <div class="hero-shoe-shadow"></div>
+          <!-- Floating badge info -->
+          <div class="floating-badge badge-top">
+            <i class="fas fa-bolt"></i>
+            <div>
+              <h4>Boost Tech</h4>
+              <p>+20% Energy Return</p>
+            </div>
+          </div>
+          <div class="floating-badge badge-bottom">
+            <i class="fas fa-leaf"></i>
+            <div>
+              <h4>Eco Friendly</h4>
+              <p>Primeblue Recycled</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#features-summary" class="scroll-down-indicator" aria-label="Scroll Down">
+        <span>Scroll</span>
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- Features Summary Section -->
+    <section class="features-summary-section" id="features-summary">
+      <div class="features-grid">
+        <div class="feature-summary-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Free Shipping</h3>
+            <p>On all orders above $150</p>
+          </div>
+        </div>
+        <div class="feature-summary-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-shield-halved"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Secure Payment</h3>
+            <p>100% encrypted checkout</p>
+          </div>
+        </div>
+        <div class="feature-summary-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-arrow-rotate-left"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Easy Returns</h3>
+            <p>30-day hassle-free policy</p>
+          </div>
+        </div>
+        <div class="feature-summary-card">
+          <div class="feature-icon-wrapper">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="feature-text">
+            <h3>Premium Quality</h3>
+            <p>Genuine Adidas products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories Section -->
+    <section class="categories-section" id="categories">
+      <div class="section-header align-center">
+        <span class="section-tag">GEARED FOR EVERY SPORT</span>
+        <h2 class="section-title">FEATURED CATEGORIES</h2>
+      </div>
+
+      <div class="categories-grid">
+        <!-- Running -->
+        <div class="category-card reveal">
+          <div class="category-img-container">
+            <img src="https://images.unsplash.com/photo-1639822094742-a6b546e58a0e?w=800&auto=format&fit=crop&q=80" alt="Running" class="category-img" loading="lazy">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>RUNNING</h3>
+            <p>Engineered cushioning for long distances.</p>
+            <a href="#products" class="category-link" data-filter="running">Shop Running <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Originals -->
+        <div class="category-card reveal">
+          <div class="category-img-container">
+            <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?w=800&auto=format&fit=crop&q=80" alt="Originals" class="category-img" loading="lazy">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>ORIGINALS</h3>
+            <p>Timeless street style and retro vibes.</p>
+            <a href="#products" class="category-link" data-filter="originals">Shop Originals <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Football -->
+        <div class="category-card reveal">
+          <div class="category-img-container">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80" alt="Football" class="category-img" loading="lazy">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>FOOTBALL</h3>
+            <p>Dominate the pitch with precision grip.</p>
+            <a href="#products" class="category-link" data-filter="football">Shop Football <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Training -->
+        <div class="category-card reveal">
+          <div class="category-img-container">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop&q=80" alt="Training" class="category-img" loading="lazy">
+            <div class="category-overlay"></div>
+          </div>
+          <div class="category-content">
+            <h3>TRAINING</h3>
+            <p>Stability and support for dynamic routines.</p>
+            <a href="#products" class="category-link" data-filter="training">Shop Training <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Arrivals / Carousel Section -->
+    <section class="new-arrivals-section" id="new-arrivals">
+      <div class="section-header">
+        <div>
+          <span class="section-tag">LIMITED DROPS & BEST SELLERS</span>
+          <h2 class="section-title">NEW ARRIVALS</h2>
+        </div>
+        <!-- Carousel Navigation -->
+        <div class="carousel-nav">
+          <button class="carousel-btn prev-btn" id="carouselPrev" aria-label="Previous Slides">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next-btn" id="carouselNext" aria-label="Next Slides">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="slide-card">
+              <span class="slide-badge limit">LIMITED EDITION</span>
+              <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?w=600&auto=format&fit=crop&q=80" alt="Superstar Classic" class="slide-img" loading="lazy">
+              <div class="slide-details">
+                <h3>Superstar Classic</h3>
+                <p>Originals • Classic Leather</p>
+                <div class="slide-footer">
+                  <span class="slide-price">$120</span>
+                  <button class="quick-add-btn" data-id="superstar-cls" data-name="Superstar Classic" data-price="120" data-img="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?w=600&auto=format&fit=crop&q=80">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="slide-card">
+              <span class="slide-badge best">BEST SELLER</span>
+              <img src="https://images.unsplash.com/photo-1588110679566-158c6dea107c?w=600&auto=format&fit=crop&q=80" alt="Gazelle Vintage Red" class="slide-img" loading="lazy">
+              <div class="slide-details">
+                <h3>Gazelle Vintage</h3>
+                <p>Originals • Retro Red</p>
+                <div class="slide-footer">
+                  <span class="slide-price">$100</span>
+                  <button class="quick-add-btn" data-id="gazelle-red" data-name="Gazelle Vintage" data-price="100" data-img="https://images.unsplash.com/photo-1588110679566-158c6dea107c?w=600&auto=format&fit=crop&q=80">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="slide-card">
+              <span class="slide-badge new">NEW IN</span>
+              <img src="https://images.unsplash.com/photo-1718220095476-7916e897fc55?w=600&auto=format&fit=crop&q=80" alt="Samba OG Blue" class="slide-img" loading="lazy">
+              <div class="slide-details">
+                <h3>Samba OG Blue</h3>
+                <p>Originals • Classic Suede</p>
+                <div class="slide-footer">
+                  <span class="slide-price">$115</span>
+                  <button class="quick-add-btn" data-id="samba-blue" data-name="Samba OG Blue" data-price="115" data-img="https://images.unsplash.com/photo-1718220095476-7916e897fc55?w=600&auto=format&fit=crop&q=80">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-slide">
+            <div class="slide-card">
+              <span class="slide-badge limit">COLLECTIBLE</span>
+              <img src="https://images.unsplash.com/photo-1574020462714-5451391cc336?w=600&auto=format&fit=crop&q=80" alt="Stan Smith Lux" class="slide-img" loading="lazy">
+              <div class="slide-details">
+                <h3>Stan Smith Lux</h3>
+                <p>Originals • Premium Leather</p>
+                <div class="slide-footer">
+                  <span class="slide-price">$145</span>
+                  <button class="quick-add-btn" data-id="stan-lux" data-name="Stan Smith Lux" data-price="145" data-img="https://images.unsplash.com/photo-1574020462714-5451391cc336?w=600&auto=format&fit=crop&q=80">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-slide">
+            <div class="slide-card">
+              <span class="slide-badge best">HOT</span>
+              <img src="https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?w=600&auto=format&fit=crop&q=80" alt="4DFWD Carbon" class="slide-img" loading="lazy">
+              <div class="slide-details">
+                <h3>4DFWD Carbon</h3>
+                <p>Running • 3D Midsole</p>
+                <div class="slide-footer">
+                  <span class="slide-price">$200</span>
+                  <button class="quick-add-btn" data-id="4d-carbon" data-name="4DFWD Carbon" data-price="200" data-img="https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?w=600&auto=format&fit=crop&q=80">
+                    <i class="fas fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Progress Bar Indicators -->
+      <div class="carousel-dots" id="carouselDots">
+        <!-- Dots injected by JS -->
+      </div>
+    </section>
+
+    <!-- Featured Shoes / Products Section -->
+    <section class="products-section" id="products">
+      <div class="section-header align-center">
+        <span class="section-tag">DISCOVER THE LINEUP</span>
+        <h2 class="section-title">FEATURED SHOES</h2>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all">All Shoes</button>
+        <button class="filter-btn" data-filter="running">Running</button>
+        <button class="filter-btn" data-filter="originals">Originals</button>
+        <button class="filter-btn" data-filter="football">Football</button>
+        <button class="filter-btn" data-filter="training">Training</button>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Card 1 -->
+        <div class="product-card" data-category="running">
+          <div class="card-header">
+            <span class="badge sale">-15%</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-1">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=600&auto=format&fit=crop&q=80" alt="Ultraboost Light" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Running</span>
+            <h3 class="product-name">Ultraboost Light</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="rating-val">(4.8)</span>
+            </div>
+            <!-- Color Swatches -->
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #0077ff;" data-color="Blue"></span>
+              <span class="swatch" style="background-color: #000000;" data-color="Black"></span>
+              <span class="swatch" style="background-color: #ffffff;" data-color="White"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price"><span class="price-old">$180</span> $153</span>
+              <button class="add-to-cart-btn" data-id="shoe-1" data-name="Ultraboost Light" data-price="153" data-img="https://images.unsplash.com/photo-1562183241-b937e95585b6?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card" data-category="originals">
+          <div class="card-header">
+            <span class="badge best">BEST</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-2">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?w=600&auto=format&fit=crop&q=80" alt="Superstar Core Black" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Originals</span>
+            <h3 class="product-name">Superstar Core Black</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="rating-val">(5.0)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #1a1a1a;" data-color="Black"></span>
+              <span class="swatch" style="background-color: #ffffff;" data-color="White"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$120</span>
+              <button class="add-to-cart-btn" data-id="shoe-2" data-name="Superstar Core Black" data-price="120" data-img="https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card" data-category="football">
+          <div class="card-header">
+            <span class="badge new">NEW</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-3">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&auto=format&fit=crop&q=80" alt="Copa Pure Football" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Football</span>
+            <h3 class="product-name">Copa Pure Football</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-val">(4.2)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #000000;" data-color="Black"></span>
+              <span class="swatch" style="background-color: #ffffff;" data-color="White"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$95</span>
+              <button class="add-to-cart-btn" data-id="shoe-3" data-name="Copa Pure Football" data-price="95" data-img="https://images.unsplash.com/photo-1575361204480-aadea25e6e68?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card" data-category="training">
+          <div class="card-header">
+            <span class="badge best">BEST</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-4">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1697301339473-200fadb28daf?w=600&auto=format&fit=crop&q=80" alt="NMD_R1 Sport Trainer" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Training</span>
+            <h3 class="product-name">NMD_R1 Sport Trainer</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="rating-val">(4.9)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #7f8c8d;" data-color="Grey"></span>
+              <span class="swatch" style="background-color: #000000;" data-color="Black"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$150</span>
+              <button class="add-to-cart-btn" data-id="shoe-4" data-name="NMD_R1 Sport Trainer" data-price="150" data-img="https://images.unsplash.com/photo-1697301339473-200fadb28daf?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card" data-category="originals">
+          <div class="card-header">
+            <span class="badge sale">-20%</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-5">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1539619854632-cf2ff7529e6b?w=600&auto=format&fit=crop&q=80" alt="Gazelle Retro Mustard" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Originals</span>
+            <h3 class="product-name">Gazelle Retro Mustard</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="rating-val">(4.7)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #f7cd46;" data-color="Yellow"></span>
+              <span class="swatch" style="background-color: #000000;" data-color="Black"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price"><span class="price-old">$110</span> $88</span>
+              <button class="add-to-cart-btn" data-id="shoe-5" data-name="Gazelle Retro Mustard" data-price="88" data-img="https://images.unsplash.com/photo-1539619854632-cf2ff7529e6b?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card" data-category="running">
+          <div class="card-header">
+            <span class="badge new">NEW</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-6">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1639822094742-a6b546e58a0e?w=600&auto=format&fit=crop&q=80" alt="4DFWD 3 Advanced" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Running</span>
+            <h3 class="product-name">4DFWD 3 Advanced</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="rating-val">(4.6)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #111111;" data-color="Black"></span>
+              <span class="swatch" style="background-color: #00d2ff;" data-color="Cyan"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$220</span>
+              <button class="add-to-cart-btn" data-id="shoe-6" data-name="4DFWD 3 Advanced" data-price="220" data-img="https://images.unsplash.com/photo-1639822094742-a6b546e58a0e?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-card" data-category="football">
+          <div class="card-header">
+            <span class="badge limit">LIMIT</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-7">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&auto=format&fit=crop&q=80" alt="Predator Accuracy FG" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Football</span>
+            <h3 class="product-name">Predator Accuracy FG</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="rating-val">(4.9)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #000000;" data-color="Black"></span>
+              <span class="swatch" style="background-color: #ffffff;" data-color="White"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price">$220</span>
+              <button class="add-to-cart-btn" data-id="shoe-7" data-name="Predator Accuracy FG" data-price="220" data-img="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-card" data-category="training">
+          <div class="card-header">
+            <span class="badge sale">-15%</span>
+            <button class="wishlist-btn" aria-label="Add to Wishlist" data-id="shoe-8">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+          <div class="product-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1620794485673-cdd886ed9a8c?w=600&auto=format&fit=crop&q=80" alt="Falcon Running Pink" class="product-img" loading="lazy">
+          </div>
+          <div class="card-body">
+            <span class="product-cat">Training</span>
+            <h3 class="product-name">Falcon Running Pink</h3>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span class="rating-val">(4.2)</span>
+            </div>
+            <div class="color-swatches">
+              <span class="swatch active" style="background-color: #ffb6c1;" data-color="Pink"></span>
+              <span class="swatch" style="background-color: #ffffff;" data-color="White"></span>
+            </div>
+            <div class="card-footer">
+              <span class="price"><span class="price-old">$100</span> $85</span>
+              <button class="add-to-cart-btn" data-id="shoe-8" data-name="Falcon Running Pink" data-price="85" data-img="https://images.unsplash.com/photo-1620794485673-cdd886ed9a8c?w=600&auto=format&fit=crop&q=80">
+                <i class="fas fa-shopping-cart"></i> Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections Banner Section -->
+    <section class="banner-section" id="banner">
+      <div class="banner-bg" style="background-image: url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&auto=format&fit=crop&q=80');"></div>
+      <div class="banner-overlay"></div>
+      <div class="banner-container">
+        <div class="banner-content reveal">
+          <span class="banner-tag">ATHLETE EXCLUSIVE COLLECTION</span>
+          <h2 class="banner-title">PUSH YOUR LIMITS</h2>
+          <p class="banner-subtitle">
+            Engineered to support rapid agility, lightning speed, and maximum durability. Designed for champions who settle for nothing but gold.
+          </p>
+          <a href="#products" class="btn btn-primary ripple">Shop Collection</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="stats">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon-glow"><i class="fas fa-users"></i></div>
+          <span class="stat-number" data-target="5000000">0</span>
+          <span class="stat-suffix">M+</span>
+          <p class="stat-title">Active Customers</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-glow"><i class="fas fa-earth-americas"></i></div>
+          <span class="stat-number" data-target="120">0</span>
+          <span class="stat-suffix">+</span>
+          <p class="stat-title">Countries Covered</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-glow"><i class="fas fa-shoe-prints"></i></div>
+          <span class="stat-number" data-target="15000">0</span>
+          <span class="stat-suffix">+</span>
+          <p class="stat-title">Premium Products</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon-glow"><i class="fas fa-face-smile"></i></div>
+          <span class="stat-number" data-target="98">0</span>
+          <span class="stat-suffix">%</span>
+          <p class="stat-title">Satisfaction Rate</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section (Masonry) -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-header align-center">
+        <span class="section-tag">CREATED FOR THE STREETS</span>
+        <h2 class="section-title">#ADIDAS STYLE GALLERY</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item size-double reveal">
+          <img src="https://images.unsplash.com/photo-1639822094742-a6b546e58a0e?w=800&auto=format&fit=crop&q=80" alt="Running Shoe Action" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidasrunning</span>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1555274175-6cbf6f3b137b?w=600&auto=format&fit=crop&q=80" alt="Casual Sneaker Detail" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidasoriginals</span>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&auto=format&fit=crop&q=80" alt="Football Cleat Turf" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidasfootball</span>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1574020462714-5451391cc336?w=600&auto=format&fit=crop&q=80" alt="Gym Workout Shoe" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidastraining</span>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="gallery-item size-wide reveal">
+          <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?w=800&auto=format&fit=crop&q=80" alt="Close-up Detail" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidassports</span>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=600&auto=format&fit=crop&q=80" alt="Football Action Cleats" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidasfootball</span>
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div class="gallery-item size-wide reveal">
+          <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?w=800&auto=format&fit=crop&q=80" alt="Sneaker Street Style" loading="lazy">
+          <div class="gallery-hover">
+            <i class="fab fa-instagram"></i>
+            <span>@adidasoriginals</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews">
+      <div class="section-header align-center">
+        <span class="section-tag">TESTIMONIALS</span>
+        <h2 class="section-title">WHAT CREATORS SAY</h2>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The energy return is unreal. Running 10Ks feels like bouncing on clouds. Plus, the premium electric blue accent coordinates perfectly with all my sportswear."
+          </p>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80" alt="Sarah J." class="author-img" loading="lazy">
+            <div>
+              <h4>Sarah Jenkins</h4>
+              <p>Marathon Runner</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Samba Classics have always been my favorite street shoe. The design is sleek, minimal, and absolutely premium. The light mode/dark mode toggle website details are amazing too!"
+          </p>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80" alt="Marcus V." class="author-img" loading="lazy">
+            <div>
+              <h4>Marcus Vance</h4>
+              <p>Creative Director</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card reveal">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">
+            "The 3D printed sole on the 4DFWD is visually stunning and functionally incredible. Standard trainers just can't compete. Fast shipping and premium delivery packaging."
+          </p>
+          <div class="review-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80" alt="Elena K." class="author-img" loading="lazy">
+            <div>
+              <h4>Elena Rostova</h4>
+              <p>Fitness Coach</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section" id="newsletter">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">STAY UPDATED</h2>
+          <p class="newsletter-desc">
+            Subscribe to receive premium early-access notifications, limited releases, and custom promotional offers.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email address" required aria-label="Email Address">
+            <button type="submit" class="btn btn-primary ripple">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Info Column -->
+      <div class="footer-column brand-col">
+        <a href="#home" class="logo">
+          <svg class="logo-svg" viewBox="0 0 40 28" fill="currentColor" style="width: 40px; height: 28px;">
+            <g transform="skewX(-30) translate(16, 0)">
+              <rect x="0" y="16" width="5" height="12" />
+              <rect x="9" y="8" width="5" height="20" />
+              <rect x="18" y="0" width="5" height="28" />
+            </g>
+          </svg>
+          <span class="logo-text">adidas</span>
+        </a>
+        <p class="footer-desc">
+          We design sportswear that supports athletes at every level. Impossible is nothing when we build together.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Links Column 1 -->
+      <div class="footer-column">
+        <h3>Shop</h3>
+        <ul class="footer-links">
+          <li><a href="#products">Running Shoes</a></li>
+          <li><a href="#products">Original Sneakers</a></li>
+          <li><a href="#products">Football Cleats</a></li>
+          <li><a href="#products">Training Gear</a></li>
+          <li><a href="#new-arrivals">Limited Releases</a></li>
+          <li><a href="#categories">Sale Collection</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 2 -->
+      <div class="footer-column">
+        <h3>Support</h3>
+        <ul class="footer-links">
+          <li><a href="#">Help & Customer Service</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Delivery & Shipping</a></li>
+          <li><a href="#">Returns & Refunds</a></li>
+          <li><a href="#">Store Finder</a></li>
+          <li><a href="#">Sizing Charts</a></li>
+        </ul>
+      </div>
+
+      <!-- Links Column 3 -->
+      <div class="footer-column">
+        <h3>Company</h3>
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press Centre</a></li>
+          <li><a href="#">Adidas Apps</a></li>
+          <li><a href="#">Affiliates</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Copyright -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-container">
+        <p>&copy; 2026 adidas. All rights reserved. Original implementation by Antigravity.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Cookie Settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification Container for interactive feedback -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
